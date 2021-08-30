@@ -1,0 +1,21 @@
+Z = SUM((1 - Di/G) * Zi) / SUM(Di/G)
+
+
+randomly generate N points
+ 
+# begin in the middle
+pick the center-most point
+pick its nearest neighbor
+create that connection
+add points to graph
+ 
+trim off outliers (n% > distance from central node than average)
+ 
+# connect the graph
+while not every point is on the graph
+  find the nearest point not on the graph
+  find its nearest neighbor that is on the graph
+  create connection
+  add point to graph
+  
+# find interesting loop-forming connections that don't cause problems
